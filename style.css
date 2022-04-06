@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-left: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  background-color: rgb(230, 230, 230);
+
+  width: 75vw;
+  padding: 10px;
+
+}
+
+label {
+  font-size: 18px;
+}
+
+label::after {
+  content: ' *';
+  color: red;
+}
+
+input, select, button {
+  background-color: rgb(221, 220, 220);
+  border-radius: 5px;
+  color: rgb(117, 117, 117);
+  margin: 15px;
+  font-size: 18px;
+}
+
+input, button {
+  border: 1px solid grey;
+}
+
+/* Find out how to smush two input fields into one with border
+
+.dp-amount {
+  margin-right: 0;
+}
+
+.dp-percentage {
+  margin-left: 0;
+} */
+
+button {
+  width: 100%;
+}

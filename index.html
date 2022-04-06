@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <h1>Mortgage Calculator</h1>
+    <div class="pie-chart">
+      <p>Your payment</p>
+      <p>Insurance</p>
+      <p>Taxes</p>
+      <p>P & I</p>
+    </div>
+    <form>
+      <div class="home-price">
+        <label>Home price</label>
+        <input placeholder="$ 300,000">
+      </div>
+      <div class="down-payment">
+        <label>Down payment</label>
+        <input
+          class="dp-amount" 
+          placeholder="$ 60,000"
+        >
+        <input 
+          class="dp-percentage"
+          placeholder="20%"
+        >
+      </div>
+      <div class="loan-program">
+        <label>Loan program</label>
+        <select>
+          <option>30 year fixed</option>
+          <option>15 year fixed</option>
+          <option>5-year ARM</option>
+        </select>
+      </div>
+      <div class="interest-rate">
+        <label>Interest rate</label>
+        <input placeholder="4.804  %">
+      </div>
+      <button>Calculate</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -4,49 +4,33 @@ body {
 }
 
 main {
-  margin-left: 15px;
   font-family: 'Courier New', Courier, monospace;
 }
 
-form {
-  background-color: rgb(230, 230, 230);
+h1 {
+  margin: 15px;
+}
 
-  width: 75vw;
-  padding: 10px;
-
+.form-row {
+  padding: 15px;
 }
 
 label {
+  display: inline-block;
   font-size: 18px;
+  width: 130px;
+  text-align: right;
 }
 
-label::after {
-  content: ' *';
-  color: red;
+input {
+  padding: 5px;
 }
 
-input, select, button {
-  background-color: rgb(221, 220, 220);
-  border-radius: 5px;
-  color: rgb(117, 117, 117);
-  margin: 15px;
-  font-size: 18px;
+#submit {
+  width: 280px;
+  padding: 5px;
 }
 
-input, button {
-  border: 1px solid grey;
-}
-
-/* Find out how to smush two input fields into one with border
-
-.dp-amount {
-  margin-right: 0;
-}
-
-.dp-percentage {
-  margin-left: 0;
-} */
-
-button {
-  width: 100%;
+#reset {
+  width: 90px;
 }

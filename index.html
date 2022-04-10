@@ -5,47 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Mortgage Calculator</title>
 </head>
 <body>
   <main>
+
     <h1>Mortgage Calculator</h1>
-    <div class="pie-chart">
-      <p>Your payment</p>
-      <p>Insurance</p>
-      <p>Taxes</p>
-      <p>P & I</p>
-    </div>
+  
     <form>
-      <div class="home-price">
-        <label>Home price</label>
-        <input placeholder="$ 300,000">
+      <div class="form-row">
+        <label>Loan Amount</label>
+        <input type="text" id="amount" name="loanAmount" />
       </div>
-      <div class="down-payment">
-        <label>Down payment</label>
-        <input
-          class="dp-amount" 
-          placeholder="$ 60,000"
-        >
-        <input 
-          class="dp-percentage"
-          placeholder="20%"
-        >
+      <div class="form-row">
+        <label>Term (years)</label>
+        <input type="text" id="term" />
       </div>
-      <div class="loan-program">
-        <label>Loan program</label>
-        <select>
-          <option>30 year fixed</option>
-          <option>15 year fixed</option>
-          <option>5-year ARM</option>
-        </select>
+      <div class="form-row">
+        <label>APR%</label>
+        <input type="text" id="apr" />
       </div>
-      <div class="interest-rate">
-        <label>Interest rate</label>
-        <input placeholder="4.804  %">
+      <div class="form-row">
+        <input type="button" id="submit" value="Submit" />
       </div>
-      <button>Calculate</button>
+      <div class="form-row">
+        <input type="text" id="payment" />
+        <input type="reset" id="reset" value="Reset Form" />
+      </div>
     </form>
+
   </main>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,36 +1,45 @@
 body {
   padding: 0;
   margin: 0;
-}
-
-main {
-  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 h1 {
-  margin: 15px;
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+}
+
+form {
+  border: 1px dashed black;
+
+  margin-left: 25px;
+
+  font-size: 30px;
 }
 
 .form-row {
-  padding: 15px;
+  margin: 5px;
 }
 
 label {
   display: inline-block;
-  font-size: 18px;
-  width: 130px;
+  width: 190px;
   text-align: right;
 }
 
 input {
-  padding: 5px;
+  font-size: 24px;
+}
+
+.data {
+  border: 1px dashed black;
 }
 
 #submit {
-  width: 280px;
-  padding: 5px;
 }
 
 #reset {
-  width: 90px;
 }

@@ -1,13 +1,12 @@
-let homeValue;
-let downPayment;
-let financedAmount;
-let term;
-let apr;
-let payment;
+let percentDown;
 
-window.onload = function() {
-  document.getElementById("submit").onclick = getValues;
-};
+function getPercentDown() {
+  percentDown = document.getElementById("percent-down").value;
+  percentDown /= 100;
+
+  // Only works after submit button is pressed the first time
+  // alert(percentDown * homeValue);
+}
 
 function getValues() {
   homeValue = document.getElementById("home-value").value;
@@ -18,7 +17,7 @@ function getValues() {
   financedAmount = homeValue - downPayment;
   apr /= 1200;
   term *= 12;
-
-  payment = financedAmount*(apr * Math.pow((1 + apr), term))/(Math.pow((1 + apr), term) - 1);
-  document.getElementById("payment").value = "$" + payment.toFixed(2) + " per month";
+  let payment = financedAmount * (apr * Math.pow((1 + apr), term)) / (Math.pow((1 + apr), term) - 1);
+  
+  document.getElementById("payment").value = "$" + payment.toFixed(2) + "/month";
 };

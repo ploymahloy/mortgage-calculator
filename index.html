@@ -15,22 +15,33 @@
     <form>
       <div class="form-row">
         <label>Home value</label>
-        <input type="text" id="home-value" placeholder="Home value"/>
+        <input type="text" id="home-value" placeholder="$"/>
       </div>
       <div class="form-row">
         <label>Down payment</label>
-        <input type="text" id="down-payment" placeholder="Down payment"/>
+        <input type="text" id="down-payment" placeholder="$"/>
+        <input 
+          type="text" 
+          id="percent-down" 
+          placeholder="%"
+          onchange="getPercentDown()"
+        />
       </div>
       <div class="form-row">
         <label>Term (years)</label>
-        <input type="text" id="term" placeholder="Term (years)"/>
+        <input type="text" id="term"/>
       </div>
       <div class="form-row">
         <label>APR%</label>
-        <input type="text" id="apr" placeholder="APR%"/>
+        <input type="text" id="apr"/>
       </div>
       <div class="form-row">
-        <input type="button" id="submit" value="Submit" />
+        <input 
+          type="button" 
+          id="submit" 
+          value="Submit" 
+          onclick="getValues()"
+        />
       </div>
       <div class="form-row">
         <input type="text" id="payment" />
@@ -41,6 +52,8 @@
     <!-- This section will replace the payment input and the reset button will be removed (onchange function added) -->
     <div class="data">
       https://www.youtube.com/watch?v=5-ptp9tRApM
+      <hr>
+      <img src="assets/placeholder.jpg">
     </div>
 
   </main>

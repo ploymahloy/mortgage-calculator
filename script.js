@@ -3,9 +3,6 @@ let percentDown;
 function getPercentDown() {
   percentDown = document.getElementById("percent-down").value;
   percentDown /= 100;
-
-  // Only works after submit button is pressed the first time
-  // alert(percentDown * homeValue);
 }
 
 function getValues() {

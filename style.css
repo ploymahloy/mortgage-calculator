@@ -18,24 +18,21 @@ h1 {
   
   font-size: 35px;
 
-  color: rgb(51, 51, 51);
-  background-color: rgb(79, 144, 205);
+  color: rgb(239, 238, 238);
+  background-color: #2a9d8f;
 }
 
 main {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   box-sizing: inherit;
 }
 
-form, .data {
+form, .data { 
   padding: 10px;
   border-radius: 10px;
   background-color: white;
-}
-
-rect {
-
 }
 
 form {
@@ -72,6 +69,10 @@ input {
 }
 
 @media only screen and (max-width: 992px) {
+  h1, .data {
+    margin-bottom: 20px;
+  }
+
   main {
     flex-direction: column-reverse;
     align-items: center;
@@ -82,6 +83,6 @@ input {
   }
 
   .data {
-    margin-bottom: 10px;
+    margin-bottom: 45px;
   }
 }

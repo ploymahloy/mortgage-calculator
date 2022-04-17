@@ -1,21 +1,33 @@
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
+let myChart = document.getElementById('myChart').getContext('2d');
 
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-    ['Task', 'Hours per Day'],
-    ['Work',     11],
-    ['Eat',      2],
-    ['Commute',  2],
-    ['Watch TV', 2],
-    ['Sleep',    7]
-  ]);
+// Global Options
+// Chart.defaults.global.defaultFontColor = 'red';
 
-  var options = {
-    title: 'My Daily Activities',
-    pieHole: 0.4,
-  };
-
-  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-  chart.draw(data, options);
-}
+  let massPopChart = new Chart(myChart, {
+    type: 'doughnut',
+    data:{
+      labels:['Principle/Interest', 'Taxes', 'Insurance'],
+      datasets:[{
+        data:[
+          617594,
+          151045,
+          60960
+        ],
+        backgroundColor: [
+          '#2a9d8f',
+          '#e9c46a',
+          '#f4a261'
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 3,
+        hoverBorderColor: 'black'
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Largest Cities in Mass'
+      }
+    }
+  })

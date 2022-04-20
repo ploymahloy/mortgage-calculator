@@ -14,25 +14,29 @@
     <form>
       <div class="form-row">
         <label>Home value</label>
-        <input type="text" id="home-value" placeholder="$"/>
+        <input 
+          type="text" 
+          id="home-value" 
+          placeholder="$300,000"
+        />
       </div>
       <div class="form-row">
         <label>Down payment</label>
-        <input type="text" id="down-payment" placeholder="$"/>
+        <input type="text" id="down-payment" placeholder="$60,000"/>
         <input 
           type="text" 
           id="percent-down" 
-          placeholder="%"
-          onchange="getPercentDown()"
+          placeholder="20%"
+          onblur="getPercentDown()"
         />
       </div>
       <div class="form-row">
         <label>Term (years)</label>
-        <input type="text" id="term"/>
+        <input type="text" id="term" placeholder="30"/>
       </div>
       <div class="form-row">
         <label>APR (%)</label>
-        <input type="text" id="apr"/>
+        <input type="text" id="apr" placeholder="4%"/>
       </div>
       <div class="form-row">
         <input 
@@ -41,20 +45,16 @@
           value="Submit" 
           onclick="getValues()"
         />
-      </div>
-      <div class="form-row">
-        <input type="text" id="payment" />
-        <input type="reset" id="reset" value="Reset Form" />
+      <input type="reset" id="reset" value="Reset Form" />
       </div>
     </form>
 
-    <!-- This section will replace the payment input and the reset button will be removed (onchange function added) -->
     <div class="data">
       <canvas id="myChart"></canvas>
+      <input type="text" id="payment" />
     </div>
 
   </main>
-<script src="chart.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

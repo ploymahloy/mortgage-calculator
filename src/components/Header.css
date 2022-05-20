@@ -1,0 +1,12 @@
+h1 {
+  width: 100vw;
+
+  margin-top: auto;
+  margin-bottom: 45px;
+  padding: 5px;
+  
+  font-size: 35px;
+
+  color: rgb(239, 238, 238);
+  background-color: #2a9d8f;
+}

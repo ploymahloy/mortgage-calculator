@@ -1,5 +1,5 @@
-.data { 
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
+.chart-wrapper {
+  width: 37%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }

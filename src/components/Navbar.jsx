@@ -1,10 +1,6 @@
 import './Navbar.css';
 
 export default function Header() {
-  return (
-    <>
-      <h1>Mortgage Calculator</h1>
-    </>
-  )
+  return <h1>Mortgage Calculator</h1>
 }
 

@@ -25,8 +25,6 @@ export default function Chart({ chartData }) {
 			insurance
 	);
 
-	console.log(paymentAmount);
-
 	const data = {
 		labels: ['P&I', 'Tax', 'Insurance'],
 		datasets: [
@@ -50,7 +48,7 @@ export default function Chart({ chartData }) {
 	return (
 		<div className="chart-wrapper">
 			<Doughnut data={data} height={'90px'} width={'90px'} id="chart" />
-			<div>Monthly Payment: ${paymentAmount}</div>
+			<div className="payment-amt">Monthly Payment: ${paymentAmount}</div>
 		</div>
 	);
 }

@@ -3,3 +3,8 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.payment-amt {
+  text-align: center;
+  padding: 15px;
+}
